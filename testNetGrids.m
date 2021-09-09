@@ -57,7 +57,7 @@ for i = 1:10
 
         end
 
-        save(sprintf('c%i_%s_%i_%sGrid_max%i_sp%i', numclasses, netname, i, grids{NdxGrid}, maxShift, gridSpacing),...
+        save(sprintf('results/c%i_%s_%i_%sGrid_max%i_sp%i', numclasses, netname, i, grids{NdxGrid}, maxShift, gridSpacing),...
             'pred','gr','gridpred','gridscores')
 
     end
