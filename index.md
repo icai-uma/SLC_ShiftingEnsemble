@@ -4,7 +4,7 @@ This repository contains the source code of the paper [Skin lesion classificatio
 
 This code executes the **Shifted GoogLeNet+MobileNetV2** method for the HAM10000 dataset. The contents of this code are provided without any warranty. They are intended for evaluational purposes only.
 
-![Alt text](Scheme.jpg?raw=true "Operation method of SLC_ShiftingEnsemble")
+![Alt text](https://raw.githubusercontent.com/icai-uma/SLC_ShiftingEnsemble/master/Scheme.jpg?raw=true "Operation method of SLC_ShiftingEnsemble")
 
 ### Pre-requisites
 
