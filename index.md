@@ -16,7 +16,7 @@ This code executes the **Shifted GoogLeNet+MobileNetV2** method for the HAM10000
 
 1. Open trainNets.m and set up the paths of the dataset
 2. Run the script
-3. 
+
 ---
 
 ### Testing
