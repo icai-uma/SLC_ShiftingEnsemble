@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+# SLC_ShiftingEnsemble
 
-You can use the [editor on GitHub](https://github.com/icai-uma/SLC_ShiftingEnsemble/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This repository contains the source code of the paper [Skin lesion classification by ensembles of deep convolutional networks and regularly spaced shifting](https://doi.org/10.1109/ACCESS.2021.3103410).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This code executes the **Shifted GoogLeNet+MobileNetV2** method for the HAM10000 dataset. The contents of this code are provided without any warranty. They are intended for evaluational purposes only.
 
-### Markdown
+![Alt text](Scheme.jpg?raw=true "Operation method of SLC_ShiftingEnsemble")
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Pre-requisites
 
-```markdown
-Syntax highlighted code block
+- Matlab (tested on v2020b or earlier). Deep learning toolbox is required to load GoogLeNet and MobileNetV2.
+---
 
-# Header 1
-## Header 2
-### Header 3
+### Training
 
-- Bulleted
-- List
+1. Open trainNets.m and set up the paths of the dataset
+2. Run the script
+---
 
-1. Numbered
-2. List
+### Testing
 
-**Bold** and _Italic_ and `Code` text
+1. Open testNetGrids.m and set up the paths of the dataset
+2. Run the script
 
-[Link](url) and ![Image](src)
-```
+### Evaluation
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- computeStatsCV.m: computes the statistics of the 10-fols CV
+- plotConfusionCV.m: computes the confusion matrices of the tested models
+- plotModelsComparisonCV.m: plots the graph bar comparing all models
 
-### Jekyll Themes
+---
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/icai-uma/SLC_ShiftingEnsemble/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Citation
 
-### Support or Contact
+Please, cite this work as:
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+K. Thurnhofer-Hemsi, E. López-Rubio, E. Domínguez and D. A. Elizondo, 
+"Skin Lesion Classification by Ensembles of Deep Convolutional Networks and Regularly Spaced Shifting",
+ in IEEE Access, vol. 9, pp. 112193-112205, 2021, doi: 10.1109/ACCESS.2021.3103410.
+(https://ieeexplore.ieee.org/abstract/document/9508981)
