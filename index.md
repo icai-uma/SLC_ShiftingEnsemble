@@ -9,7 +9,7 @@ This code executes the **Shifted GoogLeNet+MobileNetV2** method for the HAM10000
 ### Pre-requisites
 
 - Matlab (tested on v2020b or earlier). Deep learning toolbox is required to load GoogLeNet and MobileNetV2.
-- 
+
 ---
 
 ### Training
